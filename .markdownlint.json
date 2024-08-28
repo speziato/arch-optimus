@@ -1,0 +1,20 @@
+{
+  "default": true,
+  "no-inline-html": false,
+  "no-bare-urls": false,
+  "no-blanks-blockquote": false,
+  "fenced-code-language": true,
+  "no-alt-text": true,
+  "no-default-alt-text": true,
+  "no-duplicate-heading": true,
+  "no-emphasis-as-heading": true,
+  "no-generic-link-text": true,
+  "heading-increment": true,
+  "ol-prefix": {
+    "style": "ordered"
+  },
+  "single-h1": true,
+  "ul-style": {
+    "style": "dash"
+  }
+}
