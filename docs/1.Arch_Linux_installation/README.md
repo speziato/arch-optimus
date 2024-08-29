@@ -12,7 +12,7 @@ Table of contents:
 - [Step 3: Format the partitions and mount them](#step-3-format-the-partitions-and-mount-them)
 - [Step 4: Install Arch](#step-4-install-arch)
   - [Step 5: Chroot](#step-5-chroot)
-    - [5.1 User management and hostname](#51-user-management-and-hostname)
+    - [5.1 User management, hostname and network](#51-user-management-hostname-and-network)
     - [5.2 Time and localization](#52-time-and-localization)
     - [5.3 Grub](#53-grub)
     - [5.4 Reboot](#54-reboot)
@@ -124,7 +124,7 @@ In this step you will operate inside the actual Arch instance:
 arch-chroot /mnt
 ```
 
-#### 5.1 User management and hostname
+#### 5.1 User management, hostname and network
 
 Set a root password, create your main user, which will be able to `sudo`,
 and set the hostname.
@@ -135,6 +135,7 @@ useradd -m -G wheel <username> -c <Full Name> # this user will be able to sudo
 passwd <username> # set <username>'s password
 EDITOR=vim visudo # uncomment this line: # %wheel ALL=(ALL:ALL) ALL
 echo <desired-hostname> > /etc/hostname
+systemctl enable NetworkManager
 ```
 
 #### 5.2 Time and localization
