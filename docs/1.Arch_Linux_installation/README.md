@@ -15,6 +15,7 @@ Table of contents:
     - [5.1 User management and hostname](#51-user-management-and-hostname)
     - [5.2 Time and localization](#52-time-and-localization)
     - [5.3 Grub](#53-grub)
+    - [5.4 Reboot](#54-reboot)
 <!-- /TOC -->
 
 ## Step 1: Boot
