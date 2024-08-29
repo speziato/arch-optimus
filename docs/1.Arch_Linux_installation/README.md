@@ -91,8 +91,8 @@ swapon /dev/<your-device><partition2>
 Run this snippet to install the base system plus some basic packages:
 
 ```bash
-pacstrap -K /mnt base chrony\
-    efibootmgr grub intel-ucode\
+pacstrap -K /mnt base base-devel chrony\
+    efibootmgr git grub intel-ucode\
     linux-firmware linux-zen\
     networkmanager plymouth sudo vim
 ```
@@ -244,6 +244,20 @@ Unplug the USB installation media.
 
 Congrats, you have completed the installation of a bootable Arch Linux
 with the `linux-zen` kernel! 🚀
+
+#### 5.5 First boot - Networking and YaY
+
+After the first boot, make sure that you can connect to the Internet. If you have
+a WiFi, run `nmtui` and setup your connection.
+
+Install [YaY](https://github.com/Jguer/yay?tab=readme-ov-file#binary):
+
+```bash
+sudo pacman -S git base-devel
+git clone https://aur.archlinux.org/yay-bin.git
+cd yay-bin
+makepkg -si
+```
 
 [Go back to index](../)
 <!-- TODO: add here the link to the next guide -->
