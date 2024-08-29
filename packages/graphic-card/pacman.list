@@ -1,0 +1,14 @@
+lib32-mesa
+lib32-nvidia-utils
+lib32-opencl-nvidia
+lib32-vulkan-intel
+libva-utils
+mesa
+mesa-utils
+nvidia-dkms
+nvidia-settings
+nvidia-utils
+nvtop
+opencl-nvidia
+vdpauinfo
+vulkan-intel
