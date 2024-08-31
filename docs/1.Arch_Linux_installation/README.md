@@ -16,6 +16,7 @@ Table of contents:
     - [5.2 Time and localization](#52-time-and-localization)
     - [5.3 Grub](#53-grub)
     - [5.4 Reboot](#54-reboot)
+    - [5.5 First boot - Networking and YaY](#55-first-boot---networking-and-yay)
 <!-- /TOC -->
 
 ## Step 1: Boot
@@ -250,7 +251,8 @@ with the `linux-zen` kernel! 🚀
 After the first boot, make sure that you can connect to the Internet. If you have
 a WiFi, run `nmtui` and setup your connection.
 
-Install [YaY](https://github.com/Jguer/yay?tab=readme-ov-file#binary):
+Then install [YaY](https://github.com/Jguer/yay?tab=readme-ov-file#binary)
+to easily manage AUR packages:
 
 ```bash
 sudo pacman -S git base-devel
@@ -259,5 +261,6 @@ cd yay-bin
 makepkg -si
 ```
 
-[Go back to index](../)
-<!-- TODO: add here the link to the next guide -->
+[Go back to index](../#guides)
+
+[Next: GNOME DE](../2.Gnome_DE/)
