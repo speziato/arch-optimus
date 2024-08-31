@@ -201,6 +201,10 @@ and edit the following parameter as described:
 HOOKS=(systemd autodetect microcode modconf keyboard keymap consolefont block filesystems)
 ```
 
+> [!NOTE]
+> See https://wiki.archlinux.org/title/Mkinitcpio#Common_hooks for an explanation
+> about these hooks.
+
 After that, run:
 
 ```bash
