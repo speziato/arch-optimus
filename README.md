@@ -25,7 +25,7 @@ The current status is WIP. <!--TODO: update status when finished -->
 
 1. [Arch Linux installation](docs/1.Arch_Linux_installation/)
 with `linux-zen` kernel
-2. GNOME DE (with my own selection of software), running over Wayland
+2. [GNOME DE](docs/2.GNOME_DE) running over Wayland
 3. Hybrid GPU configuration (*MAYBE* in the future I will configure the dGPU for
 PCIe Passthrough to a VM, but not now)
 4. Be able to launch games from Steam, GOG and Epic Games libraries, using Wine

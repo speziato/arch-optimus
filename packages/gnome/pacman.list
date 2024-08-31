@@ -1,6 +1,7 @@
 arc-gtk-theme
 dconf-editor
 file-roller
+gcr-4
 gdm
 gedit
 gnome-backgrounds
@@ -38,6 +39,7 @@ nautilus
 papirus-icon-theme
 power-profiles-daemon
 python-nautilus
+seahorse
 snapshot
 sushi
 webkit2gtk
