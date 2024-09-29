@@ -12,3 +12,4 @@ nvtop
 opencl-nvidia
 vdpauinfo
 vulkan-intel
+libva-nvidia-driver

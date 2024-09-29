@@ -2,7 +2,11 @@ base-devel
 bash-completion
 bluez
 bluez-utils
+btop
 chrony
+cups
+cups-pdf
+dosfstools
 efibootmgr
 git
 grub
@@ -18,7 +22,10 @@ neofetch
 networkmanager
 ntfs-3g
 openssl-1.1
+pavucontrol
 plymouth
 sof-firmware
 sudo
+tldr
+ttf-cascadia-code-nerd
 vim
