@@ -28,20 +28,17 @@ with `linux-zen` kernel
 2. [GNOME DE](docs/2.GNOME_DE) running over Wayland
 3. [Hybrid GPU configuration](docs/3.Hybrid_GPU_Configuration) (*MAYBE* in the
   future I will configure the dGPU for PCIe Passthrough to a VM, but not now)
-4. Be able to launch games from Steam, GOG and Epic Games libraries, using Wine
-(or one of its forks) if they do not provide a native Linux experience.
-It has to be at least playable with good-enough performance
-(I.E.: no framerate drops, at least 60 fps at medium settings...)
+4. [Gaming](docs/4.Gaming) with Steam, GOG and Epic Games libraries
 5. Full configuration of power management for CPU and GPUs (eg: being able to
 put the laptop to sleep and resume, or automatically turn off the dGPU when not needed)
 6. Bypass GRUB using Unified Kernel Images booted up straight from the EFI firmware
 (I absolutely **HATE** the screen going from the EFI firmware logo to text
 interface to `plymouth`'s splash, turning off and on the display at every transition)
-7. Bonus: being able to use TTYs on external monitors (NVIDIA drivers do not
-provide a framebuffer, so I believe this one will be hard)
+7. Bonus: being able to use TTYs on external monitors
 8. Bonus: use LVFS with `fwupd` to enable EFI firmware updates from linux (see: https://fwupd.org/lvfs/devices/com.dell.uefi6482caa5.firmware)
 9. Bonus: enable compressed zram instead of swap
-10. Small QoL things
+10. Bonus: Small QoL things
+11. Bonus: Add Ansible playbooks for everything
 
 ## Packages lists
 
