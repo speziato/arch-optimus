@@ -50,13 +50,13 @@ First, enable the `multilib` repo:
 
 ```bash
 sudo vim /etc/pacman.conf # uncomment the entire [multilib] section
-pacman -Suy # update the system and download the multilib package list
+sudo pacman -Suy # update the system and download the multilib package list
 ```
 
 Run the following command to install required packages:
 
 ```bash
-pacman -S lib32-mesa lib32-nvidia-utils lib32-opencl-nvidia lib32-vulkan-intel\
+sudo pacman -S lib32-mesa lib32-nvidia-utils lib32-opencl-nvidia lib32-vulkan-intel\
     libva-nvidia-driver libva-utils mesa mesa-utils nvidia-dkms nvidia-settings\
     nvidia-utils nvtop opencl-nvidia vdpauinfo vulkan-intel
 ```
@@ -157,7 +157,7 @@ To also enable manual selection from Desktop entries, you can use [`switcheroo-c
 To install each of these packages, run:
 
 ```bash
-pacman -S switcheroo-control
+sudo pacman -S switcheroo-control
 yay envycontrol gnome-shell-extension-gpu-profile-selector-git
 ```
 
