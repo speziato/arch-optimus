@@ -199,7 +199,8 @@ vim /etc/mkinitcpio.conf
 and edit the following parameter as described:
 
 ```plaintext
-HOOKS=(systemd autodetect microcode modconf keyboard keymap consolefont block filesystems)
+HOOKS=(systemd autodetect microcode modconf kms keyboard keymap consolefont
+block filesystems)
 ```
 
 > [!NOTE]

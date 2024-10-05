@@ -2,6 +2,7 @@ lib32-mesa
 lib32-nvidia-utils
 lib32-opencl-nvidia
 lib32-vulkan-intel
+libva-nvidia-driver
 libva-utils
 mesa
 mesa-utils
@@ -10,6 +11,6 @@ nvidia-settings
 nvidia-utils
 nvtop
 opencl-nvidia
+switcheroo-control
 vdpauinfo
 vulkan-intel
-libva-nvidia-driver
