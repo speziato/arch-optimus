@@ -197,11 +197,11 @@ vim /etc/mkinitcpio.conf
 ```
 
 and edit the following parameter as described:
-
+<!-- markdownlint-disable MD013 -->
 ```plaintext
-HOOKS=(systemd autodetect microcode modconf kms keyboard keymap consolefont
-block filesystems)
+HOOKS=(systemd autodetect microcode modconf kms keyboard keymap consolefont block filesystems)
 ```
+<!-- markdownlint-enable MD013 -->
 
 > [!NOTE]
 > See https://wiki.archlinux.org/title/Mkinitcpio#Common_hooks for an explanation
