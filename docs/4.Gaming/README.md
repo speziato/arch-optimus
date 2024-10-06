@@ -20,7 +20,16 @@ I chose [Heroic Games Launcher](https://github.com/Heroic-Games-Launcher/HeroicG
 for its simplicity, nice UI and both GOG and Epic Games compatibility.
 
 The `gamemode` package will make sure that the system will not suspend
-during gaming sessions. There is also a GNOME shell extension to show the Gamemode
+during gaming sessions and adjust the CPU frequencies to boost performance.
+According to the [Arch Wiki page about Gamemode](https://wiki.archlinux.org/title/Gamemode),
+you also need to add your user to the `gamemode` group to be able to set
+the CPU governor:
+
+```bash
+sudo usermod -a -G gamemode <your username>
+```
+
+There is also a GNOME shell extension to show the Gamemode
 status in the traybar, but unfortunately it's not in the AUR repos (yet?).
 To install it, open Extension Manager, go to the "Browse" tab, type "gamemode"
 and install the "GameMode Shell Extension".
