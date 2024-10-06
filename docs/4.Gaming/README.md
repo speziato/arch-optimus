@@ -12,15 +12,18 @@ This guide will show how to launch games from Steam, GOG and Epic Games librarie
 To install the launchers, run:
 
 ```bash
-pacman -S steam
-yay gamescope heroic-games-launcher-bin heroic-games-launcher-bin-wayland-hook
+pacman -S steam gamemode
+yay heroic-games-launcher-bin heroic-games-launcher-bin-wayland-hook
 ```
 
 I chose [Heroic Games Launcher](https://github.com/Heroic-Games-Launcher/HeroicGamesLauncher)
 for its simplicity, nice UI and both GOG and Epic Games compatibility.
 
-The `gamescope` packages will make sure that the system will not suspend
-during gaming sessions.
+The `gamemode` package will make sure that the system will not suspend
+during gaming sessions. There is also a GNOME shell extension to show the Gamemode
+status in the traybar, but unfortunately it's not in the AUR repos (yet?).
+To install it, open Extension Manager, go to the "Browse" tab, type "gamemode"
+and install the "GameMode Shell Extension".
 
 To also enable a smoother experience, you may also want to install the following
 additional packages:
