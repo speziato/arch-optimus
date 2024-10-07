@@ -90,6 +90,14 @@ swapon /dev/<your-device><partition2>
 
 ## Step 4: Install Arch
 
+You need an internet connection now. If you're using an Ethernet cable you're
+probably fine, otherwise you can use `iwctl`'s interactive console.
+
+> [!NOTE]
+>
+> See [the `iwctl` page on the Arch Wiki](https://wiki.archlinux.org/title/Iwd#iwctl)
+> for more details about its usage.
+
 Run this snippet to install the base system plus some basic packages:
 
 ```bash
