@@ -89,3 +89,5 @@ than with GNOME's defaults.
 ![System info](images/system-info.png)
 
 [Go back to index](../#guides)
+
+[Next: Hybrid GPU Configuration](../3.Hybrid_GPU_Configuration/)

@@ -179,3 +179,7 @@ sudo envycontrol -s hybrid --rtd3 2
 > for details about selecting the GPU explicitly.
 
 Reboot and enjoy hybrid mode!
+
+[Go back to index](../#guides)
+
+[Next: Gaming](../4.Gaming/)

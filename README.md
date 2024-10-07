@@ -29,7 +29,7 @@ with `linux-zen` kernel
 3. [Hybrid GPU configuration](docs/3.Hybrid_GPU_Configuration) (*MAYBE* in the
   future I will configure the dGPU for PCIe Passthrough to a VM, but not now)
 4. [Gaming](docs/4.Gaming) with Steam, GOG and Epic Games libraries
-5. Full configuration of power management for CPU and GPUs (eg: being able to
+5. [Power management](docs/5.Power_management) for CPU and GPUs (eg: being able to
 put the laptop to sleep and resume, or automatically turn off the dGPU when not needed)
 6. Bypass GRUB using Unified Kernel Images booted up straight from the EFI firmware
 (I absolutely **HATE** the screen going from the EFI firmware logo to text

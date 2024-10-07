@@ -79,3 +79,7 @@ find your game and click on its image, click the "Install" button and select the
 folder where it's already installed, then continue as if you need to download it.
 Heroic will find that there is data in the folder, and after a quick check
 the game will be available to run.
+
+[Go back to index](../#guides)
+
+[Next: Power Management](../5.Power_management/)
