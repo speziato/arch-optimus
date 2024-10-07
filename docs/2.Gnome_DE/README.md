@@ -29,21 +29,16 @@ Also, clone this repository if you want to install my own set of packages.
 Arch provides two package groups: [`gnome`](https://archlinux.org/groups/x86_64/gnome/)
 and [`gnome-extra`](https://archlinux.org/groups/x86_64/gnome-extra/).
 
-You could easily install them with:
-
-```bash
-sudo pacman -S gnome gnome-extra
-```
-
-The most basic installation would be:
+The most basic GNOME installation without using those meta-packages would be:
 
 ```bash
 sudo pacman -S gdm gnome-session gnome-shell
 ```
 
-However, this is pretty much useless. [My list of packages](../../packages/gnome/)
-add most of the basics, without cluttering the system with software I would not
-use (like `evince`).
+However, that would be pretty much useless as it does not include *anything*
+besides the basic desktop functionality (e.g.: it's missing a file explorer).
+[My list of packages](../../packages/gnome/) adds most of the basics, without
+cluttering the system with software I would not use (like `evince`).
 
 ```bash
 sudo pacman -S $(cat packages/gnome/pacman.list)
@@ -53,7 +48,7 @@ yay -S $(cat packages/gnome/aur.list)
 ## Step 2: Configuration
 
 It would be too long to explain everything I did, so I also have my
-[`dconf` settings](conf/) in this repository. To apply them run:
+[`dconf` settings](conf/dconf_dump) in this repository. To apply them run:
 
 ```bash
 dconf load -f / < 2.Gnome_DE/conf/dconf_dump
