@@ -11,13 +11,13 @@ Table of contents:
 - [Step 2: Partition table](#step-2-partition-table)
 - [Step 3: Format the partitions and mount them](#step-3-format-the-partitions-and-mount-them)
 - [Step 4: Install Arch](#step-4-install-arch)
-  - [Step 5: Chroot](#step-5-chroot)
-    - [5.1 User management, hostname and network](#51-user-management-hostname-and-network)
-    - [5.2 Time and localization](#52-time-and-localization)
-    - [5.3 Grub](#53-grub)
-    - [5.4 SSD Trim scheduling](#54-ssd-trim-scheduling)
-    - [5.5 Reboot](#55-reboot)
-    - [5.6 First boot - Networking and YaY](#56-first-boot---networking-and-yay)
+- [Step 5: Chroot](#step-5-chroot)
+  - [5.1 User management, hostname and network](#51-user-management-hostname-and-network)
+  - [5.2 Time and localization](#52-time-and-localization)
+  - [5.3 Grub](#53-grub)
+  - [5.4 SSD Trim scheduling](#54-ssd-trim-scheduling)
+  - [5.5 Reboot](#55-reboot)
+- [Step 6: First boot - Networking and YaY](#step-6-first-boot---networking-and-yay)
 <!-- /TOC -->
 
 ## Step 1: Boot
@@ -126,7 +126,7 @@ genfstab -U /mnt >> /mnt/etc/fstab
 
 You have a functioning Arch Linux already! You can't boot into it yet though...
 
-### Step 5: Chroot
+## Step 5: Chroot
 
 In this step you will operate inside the actual Arch instance:
 
@@ -134,7 +134,7 @@ In this step you will operate inside the actual Arch instance:
 arch-chroot /mnt
 ```
 
-#### 5.1 User management, hostname and network
+### 5.1 User management, hostname and network
 
 Set a root password, create your main user, which will be able to `sudo`,
 and set the hostname.
@@ -148,7 +148,7 @@ echo <desired-hostname> > /etc/hostname
 systemctl enable NetworkManager
 ```
 
-#### 5.2 Time and localization
+### 5.2 Time and localization
 
 Set your timezone and setup the synchronization with an NTP server.
 
@@ -196,7 +196,7 @@ The last line will configure the system to use the locale you specified.
 You need this even if you want the system to be configured
 to use the `en_US.UTF-8` locale.
 
-#### 5.3 Grub
+### 5.3 Grub
 
 Time to make this Arch installation bootable. Run the following command:
 
@@ -243,7 +243,7 @@ mkinitcpio -P
 grub-install --target=x86_64-efi --efi-directory=/boot --bootloader-id=ArchGRUB
 ```
 
-#### 5.4 SSD Trim scheduling
+### 5.4 SSD Trim scheduling
 
 Enable TRIM to optimize SSD usage:
 
@@ -251,7 +251,7 @@ Enable TRIM to optimize SSD usage:
 systemctl enable fstrim.timer
 ```
 
-#### 5.5 Reboot
+### 5.5 Reboot
 
 If everything went fine, you can unmount everything and reboot.
 
@@ -268,7 +268,7 @@ Unplug the USB installation media.
 Congrats, you have completed the installation of a bootable Arch Linux
 with the `linux-zen` kernel! 🚀
 
-#### 5.6 First boot - Networking and YaY
+## Step 6: First boot - Networking and YaY
 
 After the first boot, make sure that you can connect to the Internet. If you have
 a WiFi, run `nmtui` and setup your connection.
