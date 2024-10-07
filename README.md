@@ -26,11 +26,9 @@ The current status is WIP. <!--TODO: update status when finished -->
 1. [Arch Linux installation](docs/1.Arch_Linux_installation/)
 with `linux-zen` kernel
 2. [GNOME DE](docs/2.Gnome_DE) running over Wayland
-3. [Hybrid GPU configuration](docs/3.Hybrid_GPU_Configuration) (*MAYBE* in the
-  future I will configure the dGPU for PCIe Passthrough to a VM, but not now)
+3. [Hybrid GPU configuration](docs/3.Hybrid_GPU_Configuration)
 4. [Gaming](docs/4.Gaming) with Steam, GOG and Epic Games libraries
-5. [Power management](docs/5.Power_management) for CPU and GPUs (eg: being able to
-put the laptop to sleep and resume, or automatically turn off the dGPU when not needed)
+5. [Power management](docs/5.Power_management) for CPU and GPUs
 6. Bypass GRUB using Unified Kernel Images booted up straight from the EFI firmware
 (I absolutely **HATE** the screen going from the EFI firmware logo to text
 interface to `plymouth`'s splash, turning off and on the display at every transition)
