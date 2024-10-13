@@ -113,6 +113,19 @@ See [Chapter 21](https://download.nvidia.com/XFree86/Linux-x86_64/560.35.03/READ
 and [Chapter 43](https://download.nvidia.com/XFree86/Linux-x86_64/560.35.03/README/gsp.html)
 for explanations about those parameters.
 
+> [!WARNING]
+>
+> Since `nvidia-utils 560.35.03-6` my laptop was not able to start GNOME anymore.
+> The cause is [this committ](https://gitlab.archlinux.org/archlinux/packaging/packages/nvidia-utils/-/commit/55644f78820fd382fbdf283b1fd7f08e6b7c22d7)
+> on the Arch Nvidia package, which adds the `NVreg_PreserveVideoMemoryAllocations=1`
+> kernel parameter. To resolve the issue, run the following snippet:
+>
+> ```bash
+> echo "NVreg_PreserveVideoMemoryAllocations=0" | sudo tee /etc/modprobe.d/nvidia-sleep-fix.conf"
+> ```
+>
+> Reboot and work again.
+
 ### 1.4. DRM KMS
 
 We need to add the NVIDIA kernel modules to the initramfs to enable them as
