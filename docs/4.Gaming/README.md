@@ -5,6 +5,17 @@ that is enjoyable and hassle-free.
 
 This guide will show how to launch games from Steam, GOG and Epic Games libraries.
 
+**Table of contents**:
+
+<!-- TOC -->
+- [1. Packages](#1-packages)
+  - [1.1. XBox One Controller](#11-xbox-one-controller)
+  - [1.2. Launchers](#12-launchers)
+- [2. Configuring Launchers](#2-configuring-launchers)
+  - [2.1. Steam](#21-steam)
+  - [2.2. Heroic Games Launcher](#22-heroic-games-launcher)
+<!-- /TOC -->
+
 ## 1. Packages
 
 ### 1.1. XBox One Controller
