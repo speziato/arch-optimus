@@ -61,6 +61,9 @@ and install the "GameMode Shell Extension".
 To also enable a smoother experience, you may also want to install the following
 additional packages:
 
+<!-- TODO -->
+<!-- https://aur.archlinux.org/packages/wine-staging-wow64 -->
+
 ```bash
 sudo pacman -S mono wine winetricks
 yay protontricks ttf-ms-win11-auto
@@ -103,9 +106,6 @@ find your game and click on its image, click the "Install" button and select the
 folder where it's already installed, then continue as if you need to download it.
 Heroic will find that there is data in the folder, and after a quick check
 the game will be available to run.
-
-<!-- TODO -->
-https://aur.archlinux.org/packages/wine-staging-wow64
 
 [Go back to index](../#guides)
 
