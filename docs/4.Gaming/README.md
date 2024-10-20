@@ -7,7 +7,20 @@ This guide will show how to launch games from Steam, GOG and Epic Games librarie
 
 ## 1. Packages
 
-### 1.1. Launchers
+### 1.1. XBox One Controller
+
+To make the XBox One Controller work both wired and wireless with its own dongle:
+
+```bash
+yay -S xone-dlundqvist-dkms-git
+```
+
+> [!NOTE]
+>
+> If you're using the default `linux` kernel, install the `xone-dlundqvist-git`
+>package.
+
+### 1.2. Launchers
 
 To install the launchers, run:
 
@@ -79,6 +92,9 @@ find your game and click on its image, click the "Install" button and select the
 folder where it's already installed, then continue as if you need to download it.
 Heroic will find that there is data in the folder, and after a quick check
 the game will be available to run.
+
+<!-- TODO -->
+https://aur.archlinux.org/packages/wine-staging-wow64
 
 [Go back to index](../#guides)
 
