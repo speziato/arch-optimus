@@ -32,7 +32,7 @@ with `linux-zen` kernel
 6. Bypass GRUB using Unified Kernel Images booted up straight from the EFI firmware
 (I absolutely **HATE** the screen going from the EFI firmware logo to text
 interface to `plymouth`'s splash, turning off and on the display at every transition)
-7. Bonus: being able to use TTYs on external monitors
+7. [Nerd fonts on TTYs](docs/6.Nerd_Fonts_On_TTYs)
 8. Bonus: use LVFS with `fwupd` to enable EFI firmware updates from linux (see: https://fwupd.org/lvfs/devices/com.dell.uefi6482caa5.firmware)
 9. Bonus: enable compressed zram instead of swap
 10. Bonus: Small QoL things
