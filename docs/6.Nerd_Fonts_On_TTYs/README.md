@@ -37,6 +37,14 @@ sudo ln -s '/usr/lib/systemd/system/kmsconvt@.service' '/etc/systemd/system/auto
 sudo systemctl disable getty@tty1
 ```
 
+> [!NOTE]
+>
+> This is probably _not_ the correct way to enable KMSCON now. It was described like that
+> in the [ArchWiki page I read at the time](https://wiki.archlinux.org/index.php?title=KMSCON&oldid=813389),
+> in 2024, and in the meantime the KMSCON fork I was using was merged upstream and the project
+> has gone very far from there. For a fresh install, refer to the
+> [current ArchWiki page](https://wiki.archlinux.org/title/KMSCON) instead.
+
 ## Nerd Fonts
 
 [Nerd Fonts][nerd-fonts] are usually mono-spaced fonts with special, graphic
